@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A. Pengantar Jaringan Komputer dan Internet — Bab 2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="crumbbar">
+  <div class="wrap">
+    <div class="crumb">
+      <a href="../index.html">Beranda</a>
+      <span class="sep">/</span>
+      <a href="index.html">Bab 2</a>
+      <span class="sep">/</span>
+      <span>Bagian A</span>
+    </div>
+    <div class="chip">Jaringan Komputer</div>
+  </div>
+</div>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Bagian A</div>
+    <h1>Pengantar Jaringan Komputer dan Internet</h1>
+    <p class="lede">Jaringan komputer adalah kumpulan dua atau lebih perangkat yang saling terhubung sehingga dapat bertukar data dan berbagi sumber daya. Internet adalah jaringan raksasa yang menghubungkan jutaan jaringan tersebut di seluruh dunia.</p>
+
+    <div class="ringkasan">
+      <span class="tag">Ringkasan Bagian</span>
+      <p>Bagian ini membahas pengertian jaringan komputer beserta manfaatnya, jenis jaringan berdasarkan jangkauan (PAN, LAN, MAN, WAN), berbagai topologi jaringan (Bus, Star, Ring, Mesh, dan Tree), pengertian dan sejarah singkat internet, cara kerja dasarnya melalui mekanisme client-server, serta manfaat dan dampaknya bagi kehidupan sehari-hari.</p>
+    </div>
+  </div>
+</section>
+
+<article class="wrap">
+
+<h2>1. Pengertian Jaringan Komputer</h2>
+<p>Jaringan komputer (computer network) adalah kumpulan dua atau lebih perangkat komputer yang saling terhubung satu sama lain sehingga dapat bertukar data, berbagi sumber daya (seperti printer atau penyimpanan), dan saling berkomunikasi. Hubungan antarperangkat ini bisa terjadi melalui media kabel maupun tanpa kabel (nirkabel).</p>
+<p>Sebagai gambaran sederhana, bayangkan jaringan komputer seperti jaringan jalan raya di sebuah kota. Jalan raya menghubungkan rumah-rumah (perangkat) sehingga penduduknya (data) dapat saling berkirim barang (informasi) dengan cepat. Tanpa jalan yang terhubung, setiap rumah akan terisolasi dan tidak bisa saling berkirim apa pun.</p>
+<p class="catatan">Tahukah kamu? Istilah "jaringan" dalam bahasa Inggris disebut network, gabungan dari kata net (jaring) dan work (bekerja) — menggambarkan banyak titik yang bekerja sama seperti jaring laba-laba.</p>
+
+<h2>2. Manfaat Jaringan Komputer bagi Kehidupan Sehari-hari</h2>
+<p>Keberadaan jaringan komputer memberikan banyak kemudahan dalam berbagai aspek kehidupan, di antaranya sebagai berikut.</p>
+<ul>
+  <li>Berbagi sumber daya (resource sharing) — beberapa komputer di sebuah laboratorium sekolah dapat menggunakan satu printer yang sama tanpa perlu memindahkan file dengan flashdisk.</li>
+  <li>Komunikasi cepat — pesan, gambar, maupun video dapat dikirim dan diterima dalam hitungan detik melalui aplikasi seperti WhatsApp, Telegram, atau email.</li>
+  <li>Berbagi data dan informasi — dokumen tugas dapat langsung dibagikan melalui Google Drive tanpa harus bertemu langsung.</li>
+  <li>Efisiensi biaya — satu jaringan internet dapat digunakan bersama oleh banyak perangkat dalam satu rumah atau sekolah.</li>
+  <li>Mendukung pembelajaran jarak jauh — memungkinkan siswa mengikuti kelas daring (online) dari mana saja.</li>
+</ul>
+
+<h2>3. Jenis-Jenis Jaringan Komputer Berdasarkan Jangkauan</h2>
+<p>Jaringan komputer dapat dikelompokkan berdasarkan luas area atau jangkauan geografisnya. Semakin luas jangkauannya, semakin kompleks pula infrastruktur yang dibutuhkan.</p>
+<table>
+  <tr><th>Jenis</th><th>Jangkauan</th><th>Contoh Penerapan</th></tr>
+  <tr><td>PAN (Personal Area Network)</td><td>Sangat dekat, sekitar beberapa meter</td><td>Koneksi Bluetooth antara ponsel dengan headset nirkabel atau smartwatch.</td></tr>
+  <tr><td>LAN (Local Area Network)</td><td>Satu ruangan, gedung, atau area terbatas</td><td>Jaringan komputer di laboratorium sekolah atau warnet yang terhubung ke satu router.</td></tr>
+  <tr><td>MAN (Metropolitan Area Network)</td><td>Satu kota atau area yang lebih luas dari LAN</td><td>Jaringan yang menghubungkan beberapa kantor cabang bank dalam satu kota.</td></tr>
+  <tr><td>WAN (Wide Area Network)</td><td>Antarkota, antarnegara, bahkan antarbenua</td><td>Internet itu sendiri, yang menghubungkan jutaan jaringan LAN di seluruh dunia.</td></tr>
+</table>
+<p class="catatan">Semakin luas jangkauan sebuah jaringan, umumnya semakin lambat kecepatan transfer datanya dibandingkan jaringan dengan jangkauan yang lebih sempit, karena data harus melewati lebih banyak perangkat penghubung.</p>
+
+<h2>4. Topologi Jaringan Komputer</h2>
+<p>Topologi jaringan adalah pola atau susunan bagaimana setiap perangkat (node) dalam suatu jaringan saling terhubung satu sama lain. Pemilihan topologi memengaruhi kecepatan, biaya, dan tingkat keandalan sebuah jaringan.</p>
+
+<h3>a. Topologi Bus</h3>
+<p>Semua perangkat terhubung pada satu kabel utama (backbone) secara berurutan. Topologi ini sederhana dan hemat kabel, tetapi jika kabel utama putus, seluruh jaringan akan terganggu.</p>
+
+<h3>b. Topologi Star</h3>
+<p>Setiap perangkat terhubung langsung ke satu titik pusat, biasanya berupa switch atau hub. Topologi ini paling umum digunakan saat ini karena mudah dipasang dan jika satu kabel bermasalah, perangkat lain tidak ikut terganggu.</p>
+
+<h3>c. Topologi Ring</h3>
+<p>Setiap perangkat terhubung membentuk lingkaran tertutup, di mana data mengalir dari satu perangkat ke perangkat berikutnya secara bergiliran. Jika satu titik pada lingkaran putus, aliran data dapat terganggu.</p>
+
+<h3>d. Topologi Mesh</h3>
+<p>Setiap perangkat terhubung langsung ke semua perangkat lain dalam jaringan. Topologi ini sangat andal karena memiliki banyak jalur cadangan, tetapi membutuhkan lebih banyak kabel sehingga biayanya lebih mahal.</p>
+
+<h3>e. Topologi Tree</h3>
+<p>Merupakan gabungan beberapa topologi star yang dihubungkan melalui sebuah kabel utama, membentuk struktur bertingkat seperti pohon. Topologi ini cocok untuk jaringan besar yang memerlukan pengelompokan bertingkat, misalnya jaringan antar gedung di sebuah kompleks sekolah.</p>
+
+<table>
+  <tr><th>Topologi</th><th>Kelebihan</th><th>Kekurangan</th></tr>
+  <tr><td>Bus</td><td>Hemat kabel, mudah dipasang</td><td>Jika kabel utama putus, seluruh jaringan terganggu</td></tr>
+  <tr><td>Star</td><td>Mudah dipasang dan dilacak gangguannya</td><td>Bergantung penuh pada perangkat pusat (hub/switch)</td></tr>
+  <tr><td>Ring</td><td>Aliran data lebih teratur</td><td>Satu titik putus dapat mengganggu seluruh jaringan</td></tr>
+  <tr><td>Mesh</td><td>Sangat andal, banyak jalur cadangan</td><td>Membutuhkan banyak kabel dan biaya tinggi</td></tr>
+  <tr><td>Tree</td><td>Cocok untuk jaringan besar dan bertingkat</td><td>Jika kabel utama bermasalah, cabang di bawahnya ikut terganggu</td></tr>
+</table>
+
+<h2>5. Mengenal Internet</h2>
+<p>Internet (interconnected networking) adalah jaringan komputer yang berskala global (WAN raksasa), yang menghubungkan jutaan jaringan komputer di seluruh dunia menggunakan sekumpulan aturan komunikasi standar yang disebut protokol, yaitu TCP/IP (Transmission Control Protocol/Internet Protocol).</p>
+
+<h3>Sejarah Singkat Internet</h3>
+<p>Cikal bakal internet dimulai pada tahun 1969 melalui proyek ARPANET (Advanced Research Projects Agency Network) yang dikembangkan oleh Departemen Pertahanan Amerika Serikat untuk menghubungkan beberapa universitas dalam keperluan riset. Seiring waktu, teknologi ini terus berkembang hingga pada tahun 1991 ditemukan World Wide Web (WWW) oleh Tim Berners-Lee, yang membuat internet menjadi lebih mudah diakses melalui tampilan halaman web seperti yang kita kenal sekarang.</p>
+
+<h3>Cara Kerja Internet Secara Sederhana</h3>
+<p>Ketika kalian membuka sebuah situs web, perangkat kalian (disebut client) mengirimkan permintaan (request) melalui jaringan menuju komputer penyedia layanan (disebut server) tempat data situs tersebut disimpan. Server kemudian mengirimkan kembali (response) data yang diminta, sehingga halaman web dapat ditampilkan di layar. Proses ini dapat berlangsung dalam hitungan detik berkat kecepatan transmisi data serta peran Internet Service Provider (ISP) yang menyediakan akses internet, seperti Telkomsel, Indihome, atau XL.</p>
+<div class="flow">Perangkat Client → Jaringan/ISP → Server → Jaringan/ISP → Perangkat Client</div>
+
+<h2>6. Manfaat dan Dampak Internet dalam Kehidupan</h2>
+<p>Internet memberikan banyak manfaat, namun juga membawa beberapa risiko apabila tidak digunakan secara bijak.</p>
+
+<h3>Manfaat Internet</h3>
+<ul>
+  <li>Sarana belajar dan mencari informasi dari berbagai sumber di seluruh dunia.</li>
+  <li>Media komunikasi yang menghubungkan keluarga, guru, dan teman meski berjauhan.</li>
+  <li>Sarana hiburan, seperti menonton video edukatif atau bermain game daring.</li>
+  <li>Mendukung berbagai transaksi digital, seperti belanja daring dan pembayaran elektronik.</li>
+</ul>
+
+<h3>Dampak yang Perlu Diwaspadai</h3>
+<ul>
+  <li>Penyebaran informasi palsu (hoaks) yang mudah tersebar tanpa disaring kebenarannya.</li>
+  <li>Risiko kecanduan gawai dan media sosial yang mengganggu waktu belajar dan istirahat.</li>
+  <li>Ancaman keamanan data pribadi apabila membagikan informasi sensitif secara sembarangan.</li>
+  <li>Konten yang tidak sesuai usia jika tidak diawasi dengan baik.</li>
+</ul>
+<p>Sebagai pelajar, kalian perlu menerapkan adab dan kebijaksanaan dalam berinternet — memanfaatkannya untuk hal-hal yang bermanfaat, memilah informasi dengan kritis, serta menjaga waktu agar tetap seimbang antara belajar, beribadah, dan beristirahat.</p>
+
+<div class="box aktivitas">
+  <span class="tag">Aktivitas Individu</span>
+  <ol>
+    <li>Sebutkan tiga contoh penerapan jaringan LAN yang ada di sekitar tempat tinggal atau sekolah kalian!</li>
+    <li>Menurut pendapat kalian, topologi apa yang paling cocok digunakan di laboratorium komputer sekolah? Jelaskan alasannya!</li>
+    <li>Tuliskan satu pengalaman kalian memanfaatkan internet untuk hal yang bermanfaat, dan satu hal yang perlu diwaspadai saat menggunakannya!</li>
+  </ol>
+</div>
+
+<div class="box rangkuman">
+  <span class="tag">Ringkasan Bagian A</span>
+  <p>Jaringan komputer adalah kumpulan perangkat yang saling terhubung untuk bertukar data dan berbagi sumber daya. Berdasarkan jangkauannya, jaringan dibedakan menjadi PAN, LAN, MAN, dan WAN, sedangkan berdasarkan pola hubungannya dikenal topologi Bus, Star, Ring, Mesh, dan Tree. Internet merupakan jaringan WAN raksasa yang menghubungkan jutaan jaringan di dunia melalui protokol TCP/IP, bekerja lewat mekanisme client-server, dan memberi banyak manfaat asalkan digunakan secara bijak.</p>
+</div>
+
+</article>
+
+<div class="wrap">
+  <div class="chapternav">
+    <a class="navcard" href="index.html">
+      <div class="dir">← Kembali</div>
+      <div class="title">Ringkasan Bab 2</div>
+    </a>
+    <a class="navcard next" href="b-koneksi-perangkat-jaringan.html">
+      <div class="dir">Selanjutnya →</div>
+      <div class="title">B. Koneksi Perangkat Digital ke Jaringan</div>
+    </a>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <span>Yayasan Lembah Manah Langon Jepara</span>
+    <span class="tag">bab-2 · pengantar-jaringan-internet</span>
+  </div>
+</footer>
+
+</body>
+</html>

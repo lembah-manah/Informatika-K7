@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>B. Koneksi Perangkat Digital ke Jaringan — Bab 2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="crumbbar">
+  <div class="wrap">
+    <div class="crumb">
+      <a href="../index.html">Beranda</a>
+      <span class="sep">/</span>
+      <a href="index.html">Bab 2</a>
+      <span class="sep">/</span>
+      <span>Bagian B</span>
+    </div>
+    <div class="chip">Jaringan Komputer</div>
+  </div>
+</div>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Bagian B</div>
+    <h1>Koneksi Perangkat Digital ke Jaringan</h1>
+    <p class="lede">Agar dapat terhubung ke sebuah jaringan, dibutuhkan perangkat keras pendukung, pemilihan jenis koneksi yang tepat, serta pemahaman dasar tentang pengalamatan dan keamanan jaringan.</p>
+
+    <div class="ringkasan">
+      <span class="tag">Ringkasan Bagian</span>
+      <p>Bagian ini membahas berbagai perangkat keras yang menghubungkan komputer ke suatu jaringan (modem, router, switch, access point, kabel, dan NIC), jenis koneksi kabel maupun nirkabel, langkah praktis menghubungkan perangkat ke Wi-Fi, pengenalan alamat IP secara sederhana, serta etika dan keamanan dasar saat terhubung ke jaringan.</p>
+    </div>
+  </div>
+</section>
+
+<article class="wrap">
+
+<h2>1. Perangkat Keras Pendukung Jaringan</h2>
+<p>Untuk dapat terhubung ke sebuah jaringan, dibutuhkan beberapa perangkat keras pendukung berikut ini.</p>
+<table>
+  <tr><th>Perangkat</th><th>Fungsi</th></tr>
+  <tr><td>Modem</td><td>Mengubah sinyal digital dari komputer menjadi sinyal yang dapat dikirim melalui jalur telepon/kabel/serat optik menuju penyedia layanan internet (ISP), dan sebaliknya.</td></tr>
+  <tr><td>Router</td><td>Mengatur dan mengarahkan lalu lintas data antar-jaringan, termasuk membagikan koneksi internet ke banyak perangkat sekaligus, baik melalui kabel maupun Wi-Fi.</td></tr>
+  <tr><td>Switch / Hub</td><td>Menghubungkan beberapa perangkat komputer dalam satu jaringan LAN menggunakan kabel, sehingga dapat saling bertukar data.</td></tr>
+  <tr><td>Access Point</td><td>Memancarkan sinyal Wi-Fi agar perangkat nirkabel seperti laptop dan ponsel dapat terhubung ke jaringan tanpa kabel.</td></tr>
+  <tr><td>Kabel UTP / Fiber Optik</td><td>Media penghantar data secara fisik antar-perangkat dalam jaringan berkabel.</td></tr>
+  <tr><td>NIC (Network Interface Card)</td><td>Kartu jaringan yang terpasang pada komputer sebagai titik penghubung fisik maupun nirkabel ke sebuah jaringan.</td></tr>
+</table>
+
+<h2>2. Jenis Koneksi: Kabel dan Nirkabel</h2>
+<h3>a. Koneksi Berkabel (Wired)</h3>
+<p>Menghubungkan perangkat menggunakan media fisik seperti kabel UTP atau fiber optik. Kelebihannya adalah koneksi yang stabil dan cepat, namun keterbatasannya adalah perangkat tidak dapat dipindah-pindah dengan bebas.</p>
+<h3>b. Koneksi Nirkabel (Wireless)</h3>
+<ul>
+  <li>Wi-Fi — menghubungkan perangkat ke jaringan lokal atau internet tanpa kabel dalam jangkauan tertentu, umum digunakan di rumah, sekolah, dan tempat umum.</li>
+  <li>Bluetooth — menghubungkan dua perangkat dalam jarak sangat dekat, misalnya ponsel dengan headset atau speaker nirkabel.</li>
+  <li>Hotspot / Tethering — membagikan koneksi data seluler dari satu ponsel ke perangkat lain melalui Wi-Fi.</li>
+  <li>Jaringan Seluler (3G/4G/5G) — koneksi internet yang dipancarkan oleh menara base transceiver station (BTS) milik operator seluler ke ponsel pengguna.</li>
+</ul>
+
+<h2>3. Langkah Menghubungkan Perangkat ke Jaringan Wi-Fi</h2>
+<h3>Pada Laptop/Komputer</h3>
+<ol>
+  <li>Klik ikon jaringan (Wi-Fi) yang biasanya berada di pojok kanan bawah layar.</li>
+  <li>Pilih nama jaringan (SSID) yang ingin dihubungkan dari daftar yang muncul.</li>
+  <li>Klik "Connect" atau "Hubungkan".</li>
+  <li>Masukkan kata sandi (password) jaringan jika diminta, lalu klik "OK".</li>
+  <li>Tunggu beberapa saat hingga status berubah menjadi "Connected" atau "Terhubung".</li>
+</ol>
+<h3>Pada Ponsel Pintar (Smartphone)</h3>
+<ol>
+  <li>Buka menu Pengaturan (Settings), lalu pilih menu Wi-Fi.</li>
+  <li>Aktifkan tombol Wi-Fi jika masih dalam posisi mati.</li>
+  <li>Pilih nama jaringan yang tersedia dari daftar.</li>
+  <li>Masukkan kata sandi jaringan, lalu ketuk "Hubungkan".</li>
+  <li>Ikon Wi-Fi pada status bar akan muncul menandakan koneksi berhasil.</li>
+</ol>
+
+<h2>4. Mengenal Alamat IP dan Nama Domain</h2>
+<p>Setiap perangkat yang terhubung ke sebuah jaringan memerlukan alamat unik yang disebut IP Address (Internet Protocol Address), agar perangkat lain dapat mengenali dan mengirim data dengan tepat ke perangkat tersebut. Alamat IP dapat diibaratkan seperti alamat rumah — setiap rumah memiliki alamat yang berbeda agar surat dapat sampai ke tujuan yang benar.</p>
+<p>Contoh alamat IP versi 4 (IPv4) terdiri dari empat kelompok angka yang dipisahkan tanda titik, misalnya 192.168.1.1. Karena alamat IP cukup sulit diingat, dibuatlah sistem nama domain (Domain Name System / DNS) yang menerjemahkan alamat IP menjadi nama yang lebih mudah diingat manusia, misalnya www.kemdikbud.go.id.</p>
+<p class="catatan">Tahukah kamu? Jaringan Wi-Fi di rumah atau sekolah biasanya menggunakan alamat IP lokal yang diawali dengan 192.168.x.x, yang hanya berlaku di dalam jaringan tersebut.</p>
+
+<h2>5. Etika dan Keamanan saat Terhubung ke Jaringan</h2>
+<p>Terhubung ke sebuah jaringan, terutama jaringan publik, memerlukan kewaspadaan agar data pribadi tetap aman. Berikut beberapa hal yang perlu diperhatikan.</p>
+<ul>
+  <li>Berhati-hati saat menggunakan Wi-Fi publik (misalnya di kafe atau tempat umum) untuk transaksi yang bersifat pribadi, seperti login akun penting.</li>
+  <li>Jangan sembarangan membagikan kata sandi Wi-Fi rumah kepada orang yang tidak dikenal.</li>
+  <li>Gunakan kata sandi jaringan yang kuat, kombinasi huruf, angka, dan simbol.</li>
+  <li>Pastikan perangkat memiliki antivirus atau pengaman tambahan saat sering terhubung ke jaringan luar.</li>
+  <li>Selalu meminta izin orang tua atau guru sebelum menghubungkan perangkat ke jaringan yang belum dikenal.</li>
+</ul>
+
+<div class="box aktivitas">
+  <span class="tag">Aktivitas Praktik</span>
+  <ol>
+    <li>Praktikkan langkah menghubungkan laptop atau ponsel kalian ke jaringan Wi-Fi sekolah, lalu tuliskan setiap tahapan yang kalian lakukan!</li>
+    <li>Amati router atau modem yang ada di rumah kalian. Catat nama jaringan (SSID) yang terpasang, tanpa perlu menuliskan kata sandinya!</li>
+    <li>Diskusikan bersama teman sebangku: apa yang akan kalian lakukan jika menemukan jaringan Wi-Fi publik tanpa kata sandi? Apakah aman untuk langsung digunakan? Jelaskan alasannya!</li>
+  </ol>
+</div>
+
+<div class="box rangkuman">
+  <span class="tag">Ringkasan Bagian B</span>
+  <p>Untuk terhubung ke sebuah jaringan, dibutuhkan perangkat keras seperti modem, router, switch, access point, kabel, dan NIC. Koneksi dapat dilakukan secara berkabel maupun nirkabel (Wi-Fi, Bluetooth, hotspot, jaringan seluler). Setiap perangkat dalam jaringan memiliki alamat IP yang diterjemahkan menjadi nama domain agar mudah diingat. Saat terhubung ke jaringan, terutama jaringan publik, penting untuk selalu menerapkan etika dan kewaspadaan demi menjaga keamanan data pribadi.</p>
+</div>
+
+<div class="box rangkuman" style="border-left-color:var(--amber);">
+  <span class="tag" style="color:var(--amber);">Ringkasan Materi Bab 2</span>
+  <p>Jaringan komputer menghubungkan berbagai perangkat agar dapat saling bertukar data dan berbagi sumber daya, dengan jenis yang beragam mulai dari PAN, LAN, MAN, hingga WAN, serta pola hubungan yang disebut topologi jaringan. Internet merupakan jaringan WAN raksasa yang menghubungkan miliaran perangkat di dunia melalui protokol TCP/IP. Agar dapat terhubung ke suatu jaringan, dibutuhkan perangkat keras pendukung serta pemahaman dasar mengenai alamat IP. Yang tidak kalah penting, setiap pengguna wajib menerapkan etika dan kewaspadaan demi menjaga keamanan data pribadi ketika terhubung ke jaringan maupun internet.</p>
+</div>
+
+</article>
+
+<div class="wrap">
+  <div class="chapternav">
+    <a class="navcard" href="a-pengantar-jaringan-internet.html">
+      <div class="dir">← Sebelumnya</div>
+      <div class="title">A. Pengantar Jaringan Komputer dan Internet</div>
+    </a>
+    <a class="navcard next" href="asesmen-formatif-2.html">
+      <div class="dir">Selanjutnya →</div>
+      <div class="title">Asesmen Formatif 2</div>
+    </a>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <span>Yayasan Lembah Manah Langon Jepara</span>
+    <span class="tag">bab-2 · koneksi-perangkat-jaringan</span>
+  </div>
+</footer>
+
+</body>
+</html>
